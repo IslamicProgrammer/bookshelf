@@ -1,0 +1,9 @@
+@import "./normalize";
+@import "./typography";
+@import "./themes";
+@import "./base";
+@import "react-toastify/dist/ReactToastify.css";
+
+:root {
+  @include theme-light;
+}
