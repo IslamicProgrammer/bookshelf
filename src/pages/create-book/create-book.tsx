@@ -1,7 +1,5 @@
 import { Button, Input } from "components";
-import { Hooks } from "modules/books";
 import React from "react";
-import { useUser } from "store";
 
 import { Forms, Types } from "modules/create-book";
 
@@ -30,7 +28,7 @@ const Books: React.FC = () => {
                 type="submit"
                 variant="contained"
               >
-                Create Book
+                {!formState.isSubmitting && "Create Book"}
               </Button>
             </div>
           )}
