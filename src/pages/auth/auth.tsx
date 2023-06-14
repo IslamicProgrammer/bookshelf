@@ -41,11 +41,13 @@ const Auth: FC = () => {
                 label="Password"
                 size="small"
               />
-              <div className={cls.row}>
-                <Link to="/login">Already have an account ?</Link>
-              </div>
 
-              <Button size="large" type="submit" variant="contained">
+              <Button
+                className={cls.button}
+                size="large"
+                type="submit"
+                variant="contained"
+              >
                 Submit
               </Button>
             </div>

@@ -16,10 +16,26 @@ export namespace IEntity {
     }
   }
   export namespace Api {
-    export type Response = {
-      data: IEntity.Books.Book[];
-      isOk: boolean;
-    };
+    export namespace Get {
+      export type Response = {
+        data: IEntity.Books.Book[];
+        isOk: boolean;
+      };
+
+      export type Request = {
+        title: string;
+      };
+    }
+
+    export namespace Edit {
+      export interface Request {
+        id: number;
+        status: number;
+      }
+    }
+    export namespace Delete {
+      export type Request = Pick<Api.Edit.Request, "id">;
+    }
   }
 }
 

@@ -1,4 +1,3 @@
-import { ButtonProps as BaseButtonProps } from "@mui/material";
 import LoadingButton, { LoadingButtonProps } from "@mui/lab/LoadingButton";
 
 import React from "react";

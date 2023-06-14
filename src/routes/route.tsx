@@ -31,6 +31,14 @@ const Route = () => {
         }
       />
       <BaseRoute
+        path="/books/:id"
+        element={
+          <PrivateRoute user={user}>
+            <Pages.Book />
+          </PrivateRoute>
+        }
+      />
+      <BaseRoute
         path="/"
         element={!user ? <Pages.Auth /> : <Navigate to="/books" />}
       />

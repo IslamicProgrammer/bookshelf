@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+
+    .delete {
+      color: white;
+      background-color: #ed5e69 !important;
+    }
+    .edit {
+      color: white;
+      background-color: var(--content-secondary) !important;
+    }
+  }
+}

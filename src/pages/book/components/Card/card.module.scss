@@ -1,22 +1,15 @@
 .wrapper {
-  box-shadow: rgba(0, 0, 0, 0.148) 0px 3px 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   padding: 15px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  // flex: 0 0 calc(20% - 10px);
+  // margin-bottom: 20px;
   width: 100%;
   min-height: 345px;
-  transition: all 0.4s ease;
-  flex: 1;
-  margin: 10px;
-  max-width: 281.75px;
-
-  &:hover {
-    transform: translateY(-10px), scale(1.2);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
 
   @media screen and (max-width: 768px) {
     flex-basis: calc(25% - 10px);

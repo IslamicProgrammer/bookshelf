@@ -1,0 +1,46 @@
+.wrapper {
+  width: 100%;
+
+  .info {
+    display: flex;
+    gap: 30px;
+
+    .image {
+      img {
+        width: 200px;
+        object-fit: contain;
+      }
+    }
+
+    .content {
+      p {
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .edit-content {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        span {
+          font-weight: bold;
+        }
+
+        .edit {
+          display: flex;
+          gap: 10px;
+
+          .input {
+            width: 100%;
+          }
+
+          .btn {
+            width: max-content !important;
+          }
+        }
+      }
+    }
+  }
+}

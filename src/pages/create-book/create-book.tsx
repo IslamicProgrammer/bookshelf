@@ -6,19 +6,15 @@ import { useUser } from "store";
 import { Forms, Types } from "modules/create-book";
 
 import { BooksLayout } from "layouts";
+import { Alert } from "@mui/material";
 
 const Books: React.FC = () => {
-  const { logout } = useUser();
-
-  const { data, isLoading, isError } = Hooks.useBooks();
-
-  console.log(data);
-  console.log(isError);
-
   return (
     <BooksLayout>
       <h1>Add Book</h1>
       <div className="block">
+        <Alert severity="warning">Please make sure enter valid ISBN data</Alert>
+
         <Forms.CreateBook>
           {({ control, formState }) => (
             <div>

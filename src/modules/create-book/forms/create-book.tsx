@@ -8,7 +8,7 @@ import * as Hooks from "../hooks";
 import { createBookScheme } from "./scheme";
 import { toast } from "react-toastify";
 
-interface AuthProps {
+interface CreateBookProps {
   defaultValues?: Partial<Types.CreateBook.Form.Create>;
   onSuccess?: () => void;
   children: (
@@ -16,7 +16,10 @@ interface AuthProps {
   ) => React.ReactNode;
 }
 
-const Auth: React.FC<AuthProps> = ({ children, defaultValues = {} }) => {
+const CreateBook: React.FC<CreateBookProps> = ({
+  children,
+  defaultValues = {},
+}) => {
   const createMutation = Hooks.useCreateBook();
 
   const formData = useForm<Types.CreateBook.Form.Create>({
@@ -45,4 +48,4 @@ const Auth: React.FC<AuthProps> = ({ children, defaultValues = {} }) => {
   );
 };
 
-export default Auth;
+export default CreateBook;

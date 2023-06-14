@@ -1,7 +1,8 @@
 .wrapper {
   background-color: #ffffff;
-
   display: flex;
+  height: 100vh;
+  overflow: hidden !important;
 
   .sidebar {
     width: 100px;
