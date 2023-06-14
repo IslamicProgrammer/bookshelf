@@ -28,8 +28,8 @@ const Auth: React.FC<AuthProps> = ({ children, defaultValues = {} }) => {
     },
   });
 
-  const onSubmit = (data: Types.Form.Create) => {
-    createMutation.mutate(
+  const onSubmit = async (data: Types.Form.Create) => {
+    await createMutation.mutateAsync(
       {
         email: data.email,
         key: data.secret,

@@ -47,8 +47,9 @@ const Auth: FC = () => {
                 size="large"
                 type="submit"
                 variant="contained"
+                loading={data.formState.isLoading}
               >
-                Submit
+                {!data.formState.isLoading && "Submit"}
               </Button>
             </div>
           );
