@@ -18,8 +18,8 @@ const Card: React.FC<CardProps> = ({ title, author, image, onClick }) => {
         <img src={image ? image : noImage} alt="image" />
       </div>
       <div className={cls.content}>
-        <h4>{title}</h4>
-        <p>{author}</p>
+        <h4>{title ? title : "Not found"}</h4>
+        <p>{author ? author : "Not found"}</p>
       </div>
     </div>
   );

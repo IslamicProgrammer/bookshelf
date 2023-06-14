@@ -76,10 +76,10 @@ const Books: React.FC = () => {
               <img src={book.cover ? book.cover : noImage} alt="image" />
             </div>
             <div className={cls.content}>
-              <h4>Title: {book.title}</h4>
+              <h4>Title: {book.title ? book.title : "Not found"}</h4>
               <p>
                 <span>Author: </span>
-                {book.author}
+                {book.author ? book.author : "Not found"}
               </p>
               <p>
                 <span>Published: </span> {book.published}
